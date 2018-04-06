@@ -1,6 +1,7 @@
 pipeline:
   build:
     image: golang:alpine
-    - echo "start build"
-    - go build -o app
-    - ./app
+    commands:
+      - echo "start build"
+      - go build -o app
+      - ./app
